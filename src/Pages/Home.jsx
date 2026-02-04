@@ -8,19 +8,12 @@ import "./HomePage.css";
 import TrandingSection from "../Component/TrandingSection";
 import Top from "../Component/Top";
 import Category from "../Component/Category";
-import Footer from "../Component/Footer";
-
-
 
 function Home() {
-  
-
-  const api = "http://localhost:3400"
-  const getdata = ()=>{
-      console.log("33fwu")
-  }
+  const getdata = () => {
+    console.log("33fwu");
+  };
   return (
-    
     <>
       <div className="homePagerapper">
         <div className="header">
@@ -38,7 +31,9 @@ function Home() {
                 placeholder="Type Something"
                 className="input-home"
               />
-              <button className="btn" onClick={getdata}>Search Now</button>
+              <button className="btn" onClick={getdata}>
+                Search Now
+              </button>
             </div>
           </div>
 
@@ -68,8 +63,6 @@ function Home() {
             <h3 className="msg">USER MORE</h3>
           </div>
 
-          
-
           <div class="cards">
             <div class="iconss">
               <img src={icon_3} alt="images" />
@@ -84,13 +77,11 @@ function Home() {
             <h3 className="msg">EASY LAYOUT</h3>
           </div>
         </div>
-        
       </div>
-    <TrandingSection />
-    <Top />   
-    <Category />
-    {/* <Footer/> */}
-      </>
+      <TrandingSection />
+      <Top />
+      <Category />
+    </>
   );
 }
 
