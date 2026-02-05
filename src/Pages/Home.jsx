@@ -1,6 +1,5 @@
 import React from "react";
 import icon_1 from "../images/featured-01.png";
-// import { FaCloudDownloadAlt } from "react-icons/fa";
 import icon_2 from "../images/featured-02.png";
 import icon_3 from "../images/featured-05.png";
 import icon_4 from "../images/featured-04.png";
@@ -13,6 +12,7 @@ function Home() {
   const getdata = () => {
     console.log("33fwu");
   };
+
   return (
     <>
       <div className="homePagerapper">
@@ -46,38 +46,38 @@ function Home() {
             <span className="dis">-40%</span>
           </div>
         </div>
+
         <div className="featureCard">
-          <div class="cards">
-            <div class="iconss">
-              <img src={icon_1} alt="images" />
-              {/* <FaCloudDownloadAlt /> */}
+          <div className="cards">
+            <div className="iconss">
+              <img src={icon_1} alt="icon" />
             </div>
             <h3 className="msg">FREE STORAGE</h3>
           </div>
 
-          <div class="cards">
-            <div class="iconss">
-              <img src={icon_2} alt="images" />
-              {/* <FaCloudDownloadAlt /> */}
+          <div className="cards">
+            <div className="iconss">
+              <img src={icon_2} alt="icon" />
             </div>
             <h3 className="msg">USER MORE</h3>
           </div>
 
-          <div class="cards">
-            <div class="iconss">
-              <img src={icon_3} alt="images" />
+          <div className="cards">
+            <div className="iconss">
+              <img src={icon_3} alt="icon" />
             </div>
             <h3 className="msg">REPLY READY</h3>
           </div>
 
-          <div class="cards">
-            <div class="iconss">
-              <img src={icon_4} alt="images" />
+          <div className="cards">
+            <div className="iconss">
+              <img src={icon_4} alt="icon" />
             </div>
             <h3 className="msg">EASY LAYOUT</h3>
           </div>
         </div>
       </div>
+
       <TrandingSection />
       <Top />
       <Category />
